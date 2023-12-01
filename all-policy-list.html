@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aashapura ADMIN</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Admin template that can be used to build dashboards for CRM, CMS, etc."
+    />
+    <meta name="author" content="Potenza Global Solutions" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- app favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <!-- plugin stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
+    <!-- app style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- begin app -->
+    <div class="app">
+      <!-- begin app-wrap -->
+      <div class="app-wrap">
+        <!-- begin pre-loader -->
+        <div class="loader">
+          <div class="h-100 d-flex justify-content-center">
+            <div class="align-self-center">
+              <img src="assets/img/loader/loader.svg" alt="loader" />
+            </div>
+          </div>
+        </div>
+
+        <header class="app-header top-bar">
+          <!-- begin navbar -->
+          <nav class="navbar navbar-expand-md">
+            <!-- begin navbar-header -->
+            <div class="navbar-header d-flex align-items-center">
+              <!-- <a href="javascript:void:(0)" class="mobile-toggle"
+                ><i class="ti ti-align-right"></i
+              ></a> -->
+              <button
+              class="mobile-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="ti ti-align-right"></i>
+            </button>
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/img/logo.png"
+                  class="img-fluid logo-desktop"
+                  alt="logo"
+                />
+                <img
+                  src="assets/img/logo.png"
+                  class="img-fluid logo-mobile"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="ti ti-align-left"></i>
+            </button>
+            <!-- end navbar-header -->
+            <!-- begin navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navigation d-flex">
+                <ul class="navbar-nav nav-left">
+                  <li class="nav-item">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link sidebar-toggle"
+                    >
+                      <i class="ti ti-align-right"></i>
+                    </a>
+                  </li>
+
+                  <li
+                    class="nav-item full-screen d-none d-lg-block"
+                    id="btnFullscreen"
+                  >
+                    <a href="javascript:void(0)" class="nav-link expand">
+                      <i class="icon-size-fullscreen"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav nav-right ml-auto">
+                  <li class="nav-item dropdown user-profile">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link dropdown-toggle"
+                      id="navbarDropdown4"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="assets/img/avtar/02.jpg" alt="avtar-img" />
+                      <span class="bg-success user-status"></span>
+                    </a>
+                    <div
+                      class="dropdown-menu animated fadeIn"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <div class="bg-gradient px-4 py-3">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <div class="mr-1">
+                            <h4 class="text-white mb-0">Sales Man</h4>
+                            <small class="text-white"
+                              >salesman@example.com</small
+                            >
+                          </div>
+                          <a
+                            href="index.html"
+                            class="text-white font-20 tooltip-wrapper"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title="Logout"
+                          >
+                            <i class="zmdi zmdi-power"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end navigation -->
+          </nav>
+          <!-- end navbar -->
+        </header>
+
+        <div class="app-container">
+          <aside class="app-navbar">
+            <div class="sidebar-nav scrollbar scroll_light">
+              <ul class="metismenu" id="sidebarNav">
+                <li class="nav-static-title">Personal</li>
+                <li class="active">
+                  <a
+                    class="has-arrow"
+                    href="javascript:void(0)"
+                    aria-expanded="false"
+                  >
+                    <i class="nav-icon ti ti-rocket"></i>
+                    <span class="nav-title">Dashboards</span>
+                    <span class="nav-label label label-danger">4</span>
+                  </a>
+                  <ul aria-expanded="false">
+                    <li ><a href="dashboard.html">Default</a></li>
+                    <li><a href="create-policy.html">Create Policy</a></li>
+                    <li><a href="case-register.html">Case Register</a></li>
+                    <li class="active"><a href="all-policy-list.html">All Policy List</a></li>
+                    <li><a href="add-salesman.html">Add Salesman</a></li>
+                    <li><a href="salesman-list.html"> Salesman List</a></li>
+                   
+                 
+                   
+                  </ul>
+                </li>
+
+                <li class="nav-static-title">Widgets, settings</li>
+                <li>
+                  <a
+                    class="has-arrow"
+                    href="javascript:void(0)"
+                    aria-expanded="false"
+                  >
+                    <i class="nav-icon ti ti-layout-grid4-alt"></i>
+                    <span class="nav-title">Settings</span>
+                    <span class="nav-label label label-success">1</span>
+                  </a>
+                  <ul aria-expanded="false">
+                    <li><a href="general-settings.html">General Setting</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- end sidebar-nav -->
+          </aside>
+
+
+             <!-- mobile view start -->
+
+             <div class="collapse" id="collapseExample">
+              <div class="sidebar-nav scrollbar scroll_light">
+                <ul class="metismenu" id="" >
+                
+                  <li class="active" style="    margin-top: 4rem;">
+                   
+                    <ul aria-expanded="false">
+                      <li class="active"><a href="dashboard.html">Default</a></li>
+                      <li><a href="create-policy.html">Create Policy</a></li>
+                      <li><a href="case-register.html">Case Register</a></li>
+                      <li class="active"><a href="all-policy-list.html">All Policy List</a></li>
+                      <li><a href="add-salesman.html">Add Salesman</a></li>
+                      <li><a href="salesman-list.html"> Salesman List</a></li>
+                     
+                   
+                     
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- mobile view end -->
+
+          <div class="app-main" id="main">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 m-b-30">
+                  <div class="d-block d-lg-flex flex-nowrap align-items-center">
+                    <div class="page-title mr-4 pr-4 border-right">
+                      <h1>Policy List</h1>
+                    </div>
+                    <div class="breadcrumb-bar align-items-center">
+                      <nav>
+                        <ol class="breadcrumb p-0 m-b-0">
+                          <li class="breadcrumb-item">
+                            <a href="dashboard.html"
+                              ><i class="ti ti-home"></i
+                            ></a>
+                          </li>
+                          <li class="breadcrumb-item">Dashboard</li>
+                          <li
+                            class="breadcrumb-item active text-primary"
+                            aria-current="page"
+                          >
+                            Policy List
+                          </li>
+                        </ol>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- begin row -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card card-statistics">
+                    <div class="row mt-3 gy-4">
+                      <div class="col-lg-4 col-12 mx-3">
+                        <label for="inputPassword4">Search Here*</label>
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Search Here ...." aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2">
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-12 mx-3">
+                        <div class="form-group col-md-12">
+                          <label for="inputPassword4">From*</label>
+                          <input type="date" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-12 mx-3">
+                        <div class="form-group col-md-12">
+                          <label for="inputPassword4">To*</label>
+                          <input type="date" class="form-control" id="" placeholder="">
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="card-body">
+                      <div class="datatable-wrapper table-responsive">
+                        <div
+                          id="datatable_wrapper"
+                          class="dataTables_wrapper dt-bootstrap4"
+                        >
+                          <div class="row">
+                            <div class="col-sm-12 col-md-6"></div>
+                            <div class="col-sm-12 col-md-6"></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <table
+                                id="datatable"
+                                class="display compact table table-striped table-bordered dataTable"
+                                role="grid"
+                                aria-describedby="datatable_info"
+                              >
+                                <thead>
+                                  <tr role="row">
+                                    <th
+                                      class="sorting_asc"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-sort="ascending"
+                                      aria-label="Name: activate to sort column descending"
+                                      style="width: 155.672px"
+                                    >
+                                      SR.NO
+                                    </th>
+                                    <th
+                                      class="sorting"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-label="Position: activate to sort column ascending"
+                                      style="width: 253.031px"
+                                    >
+                                      POLICY NUMBER
+                                    </th>
+                                    <th
+                                      class="sorting"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-label="Position: activate to sort column ascending"
+                                      style="width: 253.031px"
+                                    >
+                                      NAME
+                                    </th>
+                                    <th
+                                      class="sorting"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-label="Office: activate to sort column ascending"
+                                      style="width: 113.078px"
+                                    >
+                                      PHONE NUMBER
+                                    </th>
+                                    <th
+                                      class="sorting"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-label="Office: activate to sort column ascending"
+                                      style="width: 113.078px"
+                                    >
+                                      Status
+                                    </th>
+
+                                    <th
+                                      class="sorting"
+                                      tabindex="0"
+                                      aria-controls="datatable"
+                                      rowspan="1"
+                                      colspan="1"
+                                      aria-label="Salary: activate to sort column ascending"
+                                      style="width: 85.4844px"
+                                    >
+                                      ACTION
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr role="row" class="odd">
+                                    <td class="sorting_1">1</td>
+                                    <td>BFRT1524789</td>
+                                    <td>Suraj Jamdade</td>
+                                    <td>+91 9874561230</td>
+                                    <td>
+                                      <span class="badge badge-danger"
+                                        >Deactive</span
+                                      >
+                                    </td>
+
+                                    <td>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary btn-sm"
+                                        data-toggle="modal"
+                                        data-target="#exampleModal"
+                                      >
+                                        View
+                                      </button>
+                                      <a
+                                        href="edit-policy.html"
+                                        class="btn btn-info btn-sm"
+                                      >
+                                        Edit
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end row -->
+            </div>
+          </div>
+        </div>
+
+        <!-- begin footer -->
+        <footer class="footer">
+          <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+              <p>&copy; Copyright 2023. All rights reserved.</p>
+            </div>
+            <div class="col col-sm-6 ml-sm-auto text-center text-sm-right">
+              <p>
+                <a target="_blank" href="https://www.templateshub.net"
+                  >Aashapura</a
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer -->
+      </div>
+      <!-- end app-wrap -->
+    </div>
+
+    <!--View modals  -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">User Information</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td colspan="2">
+                          <h4>User Details :-</h4>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td>Suraj Jamdade</td>
+                      </tr>
+                      <tr>
+                        <td>Date Of Birth</td>
+                        <td>:</td>
+                        <td>15/09/1995</td>
+                      </tr>
+
+                      <tr>
+                        <td>Address</td>
+                        <td>:</td>
+                        <td>Kothrud,Pune</td>
+                      </tr>
+                      <tr>
+                        <td>PinCode</td>
+                        <td>:</td>
+                        <td>411052</td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td>example@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Phone Number</td>
+                        <td>:</td>
+                        <td>+91 9874561230</td>
+                      </tr>
+                      <tr>
+                        <td>Nominee</td>
+                        <td>:</td>
+                        <td>asb</td>
+                      </tr>
+                      <tr>
+                        <td>Relation With Nominee</td>
+                        <td>:</td>
+                        <td>Father</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 border-left">
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td colspan="2">
+                          <h4>Product Details :-</h4>
+                        </td>
+                      </tr>
+
+                    
+                      <tr>
+                        <td>Brand Name</td>
+                        <td>:</td>
+                        <td>Hero</td>
+                      </tr>
+                      <tr>
+                        <td>Modal Name</td>
+                        <td>:</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Frame Number</td>
+                        <td>:</td>
+                        <td>12458795632</td>
+                      </tr>
+                      <tr>
+                        <td>Product Cost</td>
+                        <td>:</td>
+                        <td>Rs.5000/-</td>
+                      </tr>
+                      <tr>
+                        <td>Date Of Purchase</td>
+                        <td>:</td>
+                        <td>26/10/2023</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td colspan="2">
+                          <h4>Policy Details :-</h4>
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>Policy Purchase Date</td>
+                        <td>:</td>
+                        <td>26/10/2023</td>
+                      </tr>
+                      <tr>
+                        <td>Policy Duration</td>
+                        <td>:</td>
+                        <td>1 year</td>
+                      </tr>
+                      <tr>
+                        <td>Policy Premium Price</td>
+                        <td>:</td>
+                        <td>Rs.5000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6 col-12 border-left">
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td colspan="2">
+                          <h4>Case Register Details :-</h4>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>FIR Copy</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>CCTV Video URL*</td>
+                        <td>:</td>
+                        <td>https://</td>
+                      </tr>
+                      <tr>
+                        <td>Product Damage Image 1*</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Product Damage Image 2*</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Product Damage Image 3*</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Product Damage Image 4*</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Damage Cost</td>
+                        <td>:</td>
+                        <td>Rs.5000/-</td>
+                      </tr>
+                      <tr>
+                        <td>Repair Bill Slip</td>
+                        <td>:</td>
+                        <td>
+                          <a href="" download="">
+                            <i class="fa fa-file-pdf-o"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>Deactive</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end app -->
+
+    <!-- plugins -->
+    <script src="assets/js/vendors.js"></script>
+
+    <!-- custom app -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Aashapura ADMIN</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Admin template that can be used to build dashboards for CRM, CMS, etc."
+    />
+    <meta name="author" content="Potenza Global Solutions" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- app favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <!-- plugin stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
+    <!-- app style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- begin app -->
+    <div class="app">
+      <!-- begin app-wrap -->
+      <div class="app-wrap">
+        <!-- begin pre-loader -->
+        <div class="loader">
+          <div class="h-100 d-flex justify-content-center">
+            <div class="align-self-center">
+              <img src="assets/img/loader/loader.svg" alt="loader" />
+            </div>
+          </div>
+        </div>
+
+        <header class="app-header top-bar">
+          <!-- begin navbar -->
+          <nav class="navbar navbar-expand-md">
+            <!-- begin navbar-header -->
+            <div class="navbar-header d-flex align-items-center">
+              <!-- <a href="javascript:void:(0)" class="mobile-toggle"
+                ><i class="ti ti-align-right"></i
+              ></a> -->
+
+              <button
+              class="mobile-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="ti ti-align-right"></i>
+            </button>
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="assets/img/logo.png"
+                  class="img-fluid logo-desktop"
+                  alt="logo"
+                />
+                <img
+                  src="assets/img/logo.png"
+                  class="img-fluid logo-mobile"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="ti ti-align-left"></i>
+            </button>
+            <!-- end navbar-header -->
+            <!-- begin navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navigation d-flex">
+                <ul class="navbar-nav nav-left">
+                  <li class="nav-item">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link sidebar-toggle"
+                    >
+                      <i class="ti ti-align-right"></i>
+                    </a>
+                  </li>
+
+                  <li
+                    class="nav-item full-screen d-none d-lg-block"
+                    id="btnFullscreen"
+                  >
+                    <a href="javascript:void(0)" class="nav-link expand">
+                      <i class="icon-size-fullscreen"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav nav-right ml-auto">
+                  <li class="nav-item dropdown user-profile">
+                    <a
+                      href="javascript:void(0)"
+                      class="nav-link dropdown-toggle"
+                      id="navbarDropdown4"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <img src="assets/img/avtar/02.jpg" alt="avtar-img" />
+                      <span class="bg-success user-status"></span>
+                    </a>
+                    <div
+                      class="dropdown-menu animated fadeIn"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <div class="bg-gradient px-4 py-3">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <div class="mr-1">
+                            <h4 class="text-white mb-0">Sales Man</h4>
+                            <small class="text-white"
+                              >salesman@example.com</small
+                            >
+                          </div>
+                          <a
+                            href="index.html"
+                            class="text-white font-20 tooltip-wrapper"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title=""
+                            data-original-title="Logout"
+                          >
+                            <i class="zmdi zmdi-power"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end navigation -->
+          </nav>
+          <!-- end navbar -->
+        </header>
+
+        <div class="app-container">
+          <aside class="app-navbar">
+            <div class="sidebar-nav scrollbar scroll_light">
+              <ul class="metismenu" id="sidebarNav">
+                <li class="nav-static-title">Personal</li>
+                <li class="active">
+                  <a
+                    class="has-arrow"
+                    href="javascript:void(0)"
+                    aria-expanded="false"
+                  >
+                    <i class="nav-icon ti ti-rocket"></i>
+                    <span class="nav-title">Dashboards</span>
+                    <span class="nav-label label label-danger">4</span>
+                  </a>
+                  <ul aria-expanded="false">
+                    <li ><a href="dashboard.html">Default</a></li>
+                    <li ><a href="create-policy.html">Create Policy</a></li>
+                    <li><a href="case-register.html">Case Register</a></li>
+                    <li ><a href="all-policy-list.html">All Policy List</a></li>
+                    <li class="active"><a href="add-salesman.html">Add Salesman</a></li>
+                    <li><a href="salesman-list.html"> Salesman List</a></li>
+                   
+                 
+                   
+                  </ul>
+                </li>
+
+                <li class="nav-static-title">Widgets, settings</li>
+                <li>
+                  <a
+                    class="has-arrow"
+                    href="javascript:void(0)"
+                    aria-expanded="false"
+                  >
+                    <i class="nav-icon ti ti-layout-grid4-alt"></i>
+                    <span class="nav-title">Settings</span>
+                    <span class="nav-label label label-success">1</span>
+                  </a>
+                  <ul aria-expanded="false">
+                    <li><a href="general-settings.html">General Setting</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- end sidebar-nav -->
+          </aside>
+
+             <!-- mobile view start -->
+
+             <div class="collapse" id="collapseExample">
+              <div class="sidebar-nav scrollbar scroll_light">
+                <ul class="metismenu" id="" >
+                
+                  <li class="active" style="    margin-top: 4rem;">
+                   
+                    <ul aria-expanded="false">
+                      <li ><a href="dashboard.html">Default</a></li>
+                      <li ><a href="create-policy.html">Create Policy</a></li>
+                      <li><a href="case-register.html">Case Register</a></li>
+                      <li><a href="all-policy-list.html">All Policy List</a></li>
+                      <li class="active"><a href="add-salesman.html">Add Salesman</a></li>
+                      <li><a href="salesman-list.html"> Salesman List</a></li>
+                     
+                   
+                     
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- mobile view end -->
+
+          <div class="app-main" id="main">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12 m-b-30">
+                  <div class="d-block d-lg-flex flex-nowrap align-items-center">
+                    <div class="page-title mr-4 pr-4 border-right">
+                      <h1>Add Salesman</h1>
+                    </div>
+                    <div class="breadcrumb-bar align-items-center">
+                      <nav>
+                        <ol class="breadcrumb p-0 m-b-0">
+                          <li class="breadcrumb-item">
+                            <a href="index.html"><i class="ti ti-home"></i></a>
+                          </li>
+                          <li class="breadcrumb-item">Dashboard</li>
+                          <li
+                            class="breadcrumb-item active text-primary"
+                            aria-current="page"
+                          >
+                          Add Salesman
+                          </li>
+                        </ol>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- begin row -->
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="card card-statistics">
+                    <div class="card-body">
+                      <form>
+                        <div class="form-row mb-4">
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">First Name *</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name *</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Date Of Birth *</label>
+                            <input
+                              type="date"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Email Address*</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Mobile Number*</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Alternate Mobile Number*</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label for="inputEmail4">Address*</label>
+                            <textarea
+                              name=""
+                              id=""
+                              cols="30"
+                              rows="3"
+                              class="form-control"
+                            ></textarea>
+                          </div>
+
+                          <div class="form-group col-md-12">
+                            <label for="inputPassword4">Pin Code*</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id=""
+                              placeholder=""
+                            />
+                          </div>
+
+                      
+                         
+                        </div>
+                      </form>
+                  
+                     
+
+                      <button type="" class="btn btn-primary">Submit</button>
+                      <button type="" class="btn btn-danger">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end row -->
+            </div>
+          </div>
+        </div>
+
+        <!-- begin footer -->
+        <footer class="footer">
+          <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-left">
+              <p>&copy; Copyright 2023. All rights reserved.</p>
+            </div>
+            <div class="col col-sm-6 ml-sm-auto text-center text-sm-right">
+              <p>
+                <a target="_blank" href="https://www.templateshub.net"
+                  >Aashapura</a
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- end footer -->
+      </div>
+      <!-- end app-wrap -->
+    </div>
+    <!-- end app -->
+
+    <!-- plugins -->
+    <script src="assets/js/vendors.js"></script>
+
+    <!-- custom app -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
